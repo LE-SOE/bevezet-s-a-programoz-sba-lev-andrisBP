@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndrisCom</title>
+    <script src="Feleves_beadando_a_jobb_jegyert.js" ></script>
+</head>
+<H1> <h1 style="color:rgba(69, 44, 234, 0.643);text-align:left;"></style>Köszöntöm az AndrisCom online felületén!
+</H1>
+<div>
+    <h2 style="color:rgb(73, 73, 154);text-align:left;">Számlázzunk egyszerűen:</h2>
+</div>
+
+<body>
+    <div>
+        Időpont: <input type="number" id="idopont">
+       </div> 
+     SMS: <input type="number" text="SMS" id="uzenet">
+    <div>
+        Hívás: <input type="number" text="Perc" id="beszelgetes">   
+    </div> 
+    <p>
+    <button onclick="rogzit()">Bevitel</button>
+    <div>Forgalmi adatok:</div>
+    <ul id="forgalom_lista">
+        </ul>
+    </p>
+    
+     <button onclick="osszes()">Havi forgalmi adatok: </button>
+     <p>
+        <ul id="ossz_forgalom">
+
+        </ul>
+    </p>
+    
+    <button onclick="szorzas()">Havi számla: </button>
+    <p>
+       <ul id="ossz_fizetes">
+
+       </ul>
+   </p>
+    
+
+    <div>
+        <h2 style="color:rgb(73, 73, 154);text-align:left;">Legtöbb SMS-t generált nap keresése</h2>
+       
+    <button onclick="legtobb_uzenet()">A legforgalmasabb SMS nap</button>
+    <p>
+    <ul id="legtobb_sms">
+
+    </ul>
+</p>
+
+<div>
+    <h2 style="color:rgb(73, 73, 154);text-align:left;">Legtöbb hívást generált nap keresése</h2>
+   
+<button onclick="legtobb_hivas()">A legbeszedesebb nap</button>
+<p>
+<ul id="legtobb_beszed">
+
+</ul>
+</p>
+    
+
+    
+</body>
+</html>
